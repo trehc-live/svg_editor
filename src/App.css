@@ -1,0 +1,79 @@
+:root {
+  --base_indentation: 15px;
+  --top_menu_heigth: 10vh;
+  --top_menu_width: calc(90vw - var(--base_indentation));
+  --side_menu_height: calc(90vh - var(--base_indentation));
+  --side_menu_width: 10vh;
+  --top_button_height: calc(var(--top_menu_heigth) - 2vh);
+  --top_button_width: calc(10vw);
+}
+
+body, html{
+  background-color: #648BA5;
+  margin: 0;
+  padding: 0;
+  /*overflow: hidden;*/
+}
+
+.soft-angles{
+  border-radius: 15px;
+}
+
+.mpz{
+  margin: 0;
+  padding: 0;
+}
+
+.oh{
+  overflow: hidden;
+}
+
+.inline-group > div{
+  display: inline-block;
+}
+
+.logo{
+  align-items: center;
+  text-align: center;
+  width: var(--top_menu_heigth);
+  height: var(--side_menu_width);
+  background-color: #A09C9C;
+  background-image:url(logo.svg);
+  background-size: 100%;
+}
+
+#top-menu{
+  width: var(--top_menu_width);
+  height: var(--top_menu_heigth);
+  margin-left: var(--base_indentation);
+  background-color: #A09C9C;
+}
+
+.button{
+  width: var(--top_button_width);
+  height: var(--top_button_height);
+  margin: calc(var(--top_menu_heigth) * 0.10) 0px calc(var(--top_menu_heigth) * 0.10);
+  margin-left: var(--base_indentation);
+  background-color: aquamarine;
+  line-height: 8vh; /*gotta change*/
+  text-align: center;
+}
+
+.button:hover{
+  background-color: yellow;
+}
+
+#side-menu{
+  width: var(--side_menu_width);
+  height: calc(var(--side_menu_height) - 10px);
+  margin-top: var(--base_indentation);
+  background-color: #A09C9C;
+}
+
+#main-svgcanvas{
+  width: calc(var(--top_menu_width) - 0vw);/*let it cook*/
+  height: calc(var(--side_menu_height) - 10px);
+  margin-left: var(--base_indentation);
+  background-color: black;
+  overflow: hidden;
+}
