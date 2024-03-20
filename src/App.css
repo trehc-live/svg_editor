@@ -12,7 +12,11 @@ body, html{
   background-color: #648BA5;
   margin: 0;
   padding: 0;
+<<<<<<< HEAD
   /*overflow: hidden;*/
+=======
+  overflow: hidden;
+>>>>>>> ed6619d (big changes, trying with translate3d)
 }
 
 .soft-angles{
@@ -71,9 +75,16 @@ body, html{
 }
 
 #main-svgcanvas{
+<<<<<<< HEAD
   width: calc(var(--top_menu_width) - 0vw);/*let it cook*/
   height: calc(var(--side_menu_height) - 10px);
   margin-left: var(--base_indentation);
   background-color: black;
   overflow: hidden;
+=======
+  width: var(--top_menu_width);
+  height: calc(var(--side_menu_height) - 10px);
+  margin-left: var(--base_indentation);
+  background-color: black;
+>>>>>>> ed6619d (big changes, trying with translate3d)
 }
